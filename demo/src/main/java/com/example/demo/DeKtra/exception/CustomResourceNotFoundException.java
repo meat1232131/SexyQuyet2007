@@ -9,3 +9,4 @@ public class CustomResourceNotFoundException extends RuntimeException{
         super(message);
     }
 }
+

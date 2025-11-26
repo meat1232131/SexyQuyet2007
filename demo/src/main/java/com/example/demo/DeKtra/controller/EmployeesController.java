@@ -43,11 +43,11 @@ public class EmployeesController {
         return new ResponseEntity<>(updatedEmployee, HttpStatus.OK);
     }
 
-//    @DeleteMapping("/{id}")
-//    public ResponseEntity<String> deleteEmployee(@PathVariable("id") long id) {
-//        employeesService.delete(id);
-//        return new ResponseEntity<>("Employee with ID " + id + " deleted successfully.", HttpStatus.OK);
-//    }
+    @DeleteMapping("/{id}")
+    public ResponseEntity<String> deleteEmployee(@PathVariable("id") long id) {
+        employeesService.delete(id);
+        return new ResponseEntity<>("Employee with ID " + id + " deleted successfully.", HttpStatus.OK);
+    }
 
-    //This is a comment for testing git branch : no delete mapping
+
 }

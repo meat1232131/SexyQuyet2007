@@ -34,3 +34,4 @@ public class Employees {
     @Column(nullable = false)
     private BigDecimal salary;
 }
+

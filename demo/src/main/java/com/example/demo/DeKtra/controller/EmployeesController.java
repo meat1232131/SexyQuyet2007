@@ -49,5 +49,10 @@ public class EmployeesController {
         return new ResponseEntity<>("Employee with ID " + id + " deleted successfully.", HttpStatus.OK);
     }
     // this is a comment testing git push request
-
+    //This is a comment for testing git branch : no delete mapping
+        @DeleteMapping("/{id}")
+    public ResponseEntity<String> XoaEmployee(@PathVariable("id") long id) {
+        employeesService.delete(id);
+        return new ResponseEntity<>("Employee with ID " + id + " deleted successfully.", HttpStatus.OK);
+    }
 }
